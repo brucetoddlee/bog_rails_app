@@ -1,0 +1,10 @@
+<h3>Welcome to the Bog!</h3>
+
+<p>Creatures currently tracked:</p>
+
+<% @creatures.each do |creature| %>
+    <div>
+        Name:  <%= creature[:name] %> <br>
+        Description: <%= creature[:description] %> 
+    </div>
+<% end %>
